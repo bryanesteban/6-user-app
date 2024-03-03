@@ -53,7 +53,6 @@ export const usersSlice = createSlice({
 
         loadingUsers: (state, action) => {
             state.users = action.payload;
-            state.isLoading = false;
         },
 
         onUserSelectedForm: (state, action) => {

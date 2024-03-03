@@ -148,7 +148,6 @@ export const useUsers = () => {
         initialUserForm,
         visibleForm,
         errors,
-        isLoading,
         handlerAddUser,
         handlerRemoveUser,
         handlerUserSelectedForm,

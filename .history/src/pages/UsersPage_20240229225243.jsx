@@ -22,10 +22,11 @@ export const UsersPage = () =>{
 
     if(isLoading){
         return (
-            <div className="text-center ">
+            <div className="container my-4">
                 <div className="spinner-border text-warning" role="status">
-                    <span className="visually-hidden">Loading...</span>
+                    <span className="visually-hidden">Cargando...</span>
                 </div>
+                <h4> ...</h4>
             </div>
         );
     }

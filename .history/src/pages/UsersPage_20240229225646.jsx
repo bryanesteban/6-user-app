@@ -22,7 +22,7 @@ export const UsersPage = () =>{
 
     if(isLoading){
         return (
-            <div className="text-center ">
+            <div className="text-center y-10">
                 <div className="spinner-border text-warning" role="status">
                     <span className="visually-hidden">Loading...</span>
                 </div>
