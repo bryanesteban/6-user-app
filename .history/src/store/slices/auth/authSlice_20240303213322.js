@@ -22,16 +22,11 @@ export const AuthSlice = createSlice({
             state.isAuth = false,
             state.isAdmin = false,
             state.user = undefined
-        },
-
-        onIntLogin: (state) =>{
-            state.isLoginLoading = true;
         }
     }
 });
 
 export const {
     onLogin,
-    onLogout,
-    onIntLogin
+    onLogout 
 } = AuthSlice.actions;

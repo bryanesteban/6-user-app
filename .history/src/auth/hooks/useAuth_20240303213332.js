@@ -2,7 +2,7 @@ import Swal from "sweetalert2";
 import { loginUser } from "../services/AuthService";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { onLogin, onLogout, onIntLogin } from "../../store/slices/auth/authSlice";
+import { onLogin, onLogout } from "../../store/slices/auth/authSlice";
 
 
 

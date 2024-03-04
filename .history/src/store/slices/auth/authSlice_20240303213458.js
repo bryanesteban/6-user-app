@@ -32,6 +32,5 @@ export const AuthSlice = createSlice({
 
 export const {
     onLogin,
-    onLogout,
-    onIntLogin
+    onLogout 
 } = AuthSlice.actions;

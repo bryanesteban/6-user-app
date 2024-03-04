@@ -25,13 +25,12 @@ export const AuthSlice = createSlice({
         },
 
         onIntLogin: (state) =>{
-            state.isLoginLoading = true;
+            
         }
     }
 });
 
 export const {
     onLogin,
-    onLogout,
-    onIntLogin
+    onLogout 
 } = AuthSlice.actions;
