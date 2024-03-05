@@ -34,13 +34,15 @@ export const useAuth = () =>{
           sessionStorage.setItem('token',`Bearer ${token}`);
           navigate('/users');
         }catch(error){
-            dispatch(onLogout());
             if(error.response?.status === 401){
                 Swal.fire('Error Login','Usuario o password invalidos','error');
+                dispatch(onLogout());
             }else if (error.response?.status === 403){
                 Swal.fire('Error Login','No tiene acceso al recurso o permisos ','error');
-
+                dispatch(onLogout());
+                
             }else{
+                dispatch(onLogout());
                 throw error;
             }
         }

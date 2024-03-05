@@ -13,7 +13,6 @@ export const UsersPage = () =>{
         users,
         visibleForm,
         isLoading,
-        paginator,
         handlerOpenForm,
         getUsers,
     } = useUsers();
@@ -22,7 +21,7 @@ export const UsersPage = () =>{
 
     useEffect(() => {
         getUsers(page);
-    },[,page]);
+    },[ ],page)
 
     if(isLoading){
         return (
@@ -54,7 +53,7 @@ export const UsersPage = () =>{
                             :
                             <>
                                 <UsersList/>
-                                <Paginator url="/users/page" paginator={paginator}/>
+                                <Paginator url="users/page"/>
                             </>
                             }
                     

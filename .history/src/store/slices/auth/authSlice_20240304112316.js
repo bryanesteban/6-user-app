@@ -23,7 +23,6 @@ export const AuthSlice = createSlice({
             state.isAuth = false,
             state.isAdmin = false,
             state.user = undefined
-            state.isLoginLoading = false;
         },
 
         onIntLogin: (state) =>{

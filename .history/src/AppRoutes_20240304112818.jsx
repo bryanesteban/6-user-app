@@ -7,15 +7,6 @@ export const AppRoutes = () => {
     const {isAuth, isLoginLoading} = useSelector(state => state.auth);
 
     //aqui puede ir un useffect para validar sesion cada hora
-    if(isLoginLoading){
-        return (
-            <div className="text-center ">
-                <div className="spinner-border text-warning-secondary" role="status">
-                    <span className="visually-hidden">Loading...</span>
-                </div>
-            </div>
-        );
-    }
     return (
         <Routes>
             {

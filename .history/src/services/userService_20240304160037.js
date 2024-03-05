@@ -19,7 +19,7 @@ export const findAll = async() =>{
 export const findAllPages = async(page = 0) =>{
 
     try{
-        const response = await usersApi.get(`${BASE_URL}/page/${page}`);
+        const response = await usersApi.get(`${BASE_URL}/${page}`);
         return response;
 
     } catch(error){

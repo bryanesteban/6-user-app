@@ -19,7 +19,7 @@ export const useUsers = () => {
 
     const { login, handleLogout } = useAuth();
 
-    const getUsers = async(page = 0)  => {
+    const getUsers = async(page)  => {
 
         try {
             

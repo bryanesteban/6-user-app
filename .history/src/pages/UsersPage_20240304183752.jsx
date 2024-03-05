@@ -54,7 +54,7 @@ export const UsersPage = () =>{
                             :
                             <>
                                 <UsersList/>
-                                <Paginator url="/users/page" paginator={paginator}/>
+                                <Paginator url="/users/page"/>
                             </>
                             }
                     

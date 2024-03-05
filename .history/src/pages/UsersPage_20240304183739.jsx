@@ -13,9 +13,9 @@ export const UsersPage = () =>{
         users,
         visibleForm,
         isLoading,
-        paginator,
         handlerOpenForm,
         getUsers,
+        paginator
     } = useUsers();
 
     const { login } = useAuth();
@@ -54,7 +54,7 @@ export const UsersPage = () =>{
                             :
                             <>
                                 <UsersList/>
-                                <Paginator url="/users/page" paginator={paginator}/>
+                                <Paginator url="/users/page"/>
                             </>
                             }
                     

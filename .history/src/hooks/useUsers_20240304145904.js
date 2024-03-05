@@ -19,11 +19,11 @@ export const useUsers = () => {
 
     const { login, handleLogout } = useAuth();
 
-    const getUsers = async(page = 0)  => {
+    const getUsers = async()  => {
 
         try {
             
-            const result = await findAllPages(page);
+            const result = await findAllPages();
             dispatch(loadingUsers(result.data));
                 
         } catch (error) {
@@ -146,7 +146,6 @@ export const useUsers = () => {
         visibleForm,
         errors,
         isLoading,
-        paginator,
         handlerAddUser,
         handlerRemoveUser,
         handlerUserSelectedForm,

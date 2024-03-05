@@ -10,7 +10,7 @@ export const AppRoutes = () => {
     if(isLoginLoading){
         return (
             <div className="text-center ">
-                <div className="spinner-border text-warning-secondary" role="status">
+                <div className="spinner-border text-warning" role="status">
                     <span className="visually-hidden">Loading...</span>
                 </div>
             </div>
